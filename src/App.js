@@ -1,12 +1,14 @@
+import React from "react";
+import {MainBody}  from "./styles/global.styled";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./utils/theme";
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+     <MainBody/>
+    </ThemeProvider>
   );
 }
 
