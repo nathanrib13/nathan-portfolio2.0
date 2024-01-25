@@ -1,5 +1,5 @@
 import React from "react";
-import {MainBody}  from "./styles/global.styled";
+import {Container, MainBody}  from "./styles/global.styled";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/theme";
 
@@ -7,7 +7,9 @@ import { theme } from "./utils/theme";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-     <MainBody/>
+     <MainBody>
+      <Container/>
+     </MainBody>
     </ThemeProvider>
   );
 }
