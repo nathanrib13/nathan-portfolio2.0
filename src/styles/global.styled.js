@@ -1,8 +1,8 @@
+import { color } from "framer-motion";
 import styled from "styled-components";
 
 export const MainBody = styled.div`
 background-color: ${({theme}) => theme.colors.primary2};
-height: 100px;
 `   
 export const Container = styled.div`
 width: 90%;
