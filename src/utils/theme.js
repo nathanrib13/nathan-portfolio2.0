@@ -1,10 +1,11 @@
 export const theme = {
     colors: {
-        primary: "#ccff00",
-        primary1: "#ffcc00",
-        primary2: "#ccff00",
-        primary3: "#000",
-        primary4: "fff",
+        primary: "#0495F1",
+        primary_light: "#82CCFA",
+        secondary: "#C0C0C0",
+        white: "#EFF3F6",
+        black: "#070B0E",
+        para_text_color: "#2E3A44"
     },
     fonts:{
         titles: 'arial',

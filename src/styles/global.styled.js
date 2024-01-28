@@ -1,8 +1,7 @@
-import { color } from "framer-motion";
 import styled from "styled-components";
 
 export const MainBody = styled.div`
-background-color: ${({theme}) => theme.colors.primary2};
+background-color: ${({theme}) => theme.colors.black};
 `   
 export const Container = styled.div`
 width: 90%;
@@ -26,7 +25,7 @@ flex-direction: ${({direction}) => direction};
 }
 `
 export const Heading = styled(PaddingContainer)`
-    color: ${({theme})=> theme.colors.white};
+    color: ${({theme})=> theme.colors.secondary};
     text-align: ${({align})=>align};
     font-size: ${({size})=> {
         switch(size){
@@ -50,6 +49,22 @@ export const ParaText = styled(PaddingContainer)`
     color: ${({theme})=> theme.colors.para_text_color};
     line-height: 2rem;
 `
+export const Button = styled.a`
+    display: inline-block;
+    width: max-content;
+    padding: 1rem 2rem;
+    color: ${({theme})=> theme.colors.white};
+    background-color: ${({theme})=> theme.colors.primary_ligth};
+    border: 1px solid ${({theme})=> theme.colors.secondary};
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+&:hover{
+    color: ${({theme})=> theme.colors.primary_light};
+    background-color: ${({theme})=> theme.colors.white};
+}
+`
 export const IconContainer = styled.div`
 font-size: ${({size})=> size};
 cursor: pointer;
@@ -58,7 +73,7 @@ color: ${({color, theme}) =>{
         case 'white':
             return theme.colors.white;
         case 'blue':
-            return theme.colors.secondary;
+            return theme.colors.primary;
         default:
              return
         }
