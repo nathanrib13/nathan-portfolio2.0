@@ -7,7 +7,7 @@ export const NavMenu = ({setOpenMenu}) => {
     return(
         <NavMenuContainer>5
             <PaddingContainer left="5%" right="5%" top="2rem">
-                <FlexContainer justify="flex-end">
+                <FlexContainer justify="flex-end" responsiveFlex>
                     <MenuIcon onClick={()=>setOpenMenu(false)}>
                         <AiOutlineClose/>
                     </MenuIcon>
@@ -15,7 +15,7 @@ export const NavMenu = ({setOpenMenu}) => {
             </PaddingContainer>
 
             <PaddingContainer top="8%">
-                <FlexContainer direction="column" align="center">
+                <FlexContainer direction="column" align="center" responsiveFlex>
                     <MenuItem href="#home" onClick={()=>setOpenMenu(false)}>Home</MenuItem>
                     <MenuItem href="#skills" onClick={()=>setOpenMenu(false)}>My Skills</MenuItem>
                     <MenuItem href="#projects" onClick={()=>setOpenMenu(false)}>My Projects</MenuItem>

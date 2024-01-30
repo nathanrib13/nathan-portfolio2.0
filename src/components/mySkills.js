@@ -19,8 +19,14 @@ export const MySkills = () => {
         id="skills"
         top="10%"
         bottom="10%"
+        responsiveLeft="1rem"
+        responsiveRight="1rem"
         >
-            <FlexContainer fullWidthChild>
+            <FlexContainer 
+            responsiveFlex  
+            responsiveDirection='column-reverse'
+            fullWidthChild 
+            >
                 <SkillCardContainer>
                     {skills.map((skill)=>(
                         <SkillCardContainer>

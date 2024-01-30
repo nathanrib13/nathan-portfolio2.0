@@ -22,6 +22,9 @@ const ShowCase = () => {
             top="15%"
             rigth="10%"
             bottom="10%"
+            responsiveLeft="1rem"
+            responsiveRight="1rem"
+            responsiveTop="8rem"
         >
         <FlexContainer  fullWidthCenter>
             <div>
@@ -40,7 +43,7 @@ const ShowCase = () => {
                     I'have almost 2 years of expirience developing websites, 
                     web apllications and systems.  
                 </ParaText>
-                <FlexContainer gap="20px">
+                <FlexContainer gap="20px" responsiveFlex>
                     <IconContainer color="white" size="1.5rem">
                         <BsLinkedin/>
                     </IconContainer>

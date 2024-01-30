@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { 
     PaddingContainer,
     FlexContainer,
@@ -12,11 +12,13 @@ import { Logo, Navbarcontainer, MenuIcon } from "../styles/navbar.styled";
 export const Navbar = () =>{ 
     const [openMenu, setOpenMenu] = useState(false)
 
+
     return(
         <Navbarcontainer bgColor="transparent">
-            <PaddingContainer top="1.2rem" bottom="1.2rem">
+            <PaddingContainer top="1.2rem" bottom="1.2rem" responsiveLeft="1rem" responsiveRight="1rem">
                 <Container>
-                    <FlexContainer justify="space-between">                        <Logo>
+                    <FlexContainer justify="space-between" responsiveFlex>  
+                        <Logo>                    
                             NATHAN
                         </Logo>
                         <MenuIcon onClick={()=>{setOpenMenu(true)}}>
