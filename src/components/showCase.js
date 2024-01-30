@@ -13,6 +13,8 @@ import {
     ShowCaseParticleContainer 
 } from "../styles/showCase.styled"
 import logo2 from "../assets/logo2.png"
+import { motion } from "framer-motion"
+import { fadeInLeftVariant } from "../utils/variants"
 
 const ShowCase = () => {
     return (
@@ -27,7 +29,11 @@ const ShowCase = () => {
             responsiveTop="8rem"
         >
         <FlexContainer  fullWidthCenter>
-            <div>
+            <motion.div
+            initial={{x: -50, opacity:0}}
+            whileInView={{x: 0, opacity:1}}
+            transition={{type: 'tween', duration:1}}
+             >
                 <Heading as="h4" size="h4">Hello</Heading>
                 <Heading 
                     as="h1" 
@@ -57,8 +63,14 @@ const ShowCase = () => {
                         <BsTwitter/>
                     </IconContainer>
                 </FlexContainer>
-            </div>
-            <FlexContainer justify="justify-end">
+            </motion.div>
+            <FlexContainer 
+            as={motion.div}
+            justify="justify-end"
+            initial={{x: 50, opacity:0}}
+            whileInView={{x: 0, opacity:1}}
+            transition={{type: 'tween', duration:1}}
+            >
                 <ShowCaseParticleContainer>
                     <ShowCaseImageCard>
                         <img src={logo2} alt="logo from nathan"/>
