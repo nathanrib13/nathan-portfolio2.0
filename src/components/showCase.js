@@ -12,7 +12,7 @@ import {
     ShowCaseImageCard, 
     ShowCaseParticleContainer 
 } from "../styles/showCase.styled"
-import logo2 from "../assets/logo2.png"
+import profilePhoto from "../assets/profilePhoto.jpg"
 import { motion } from "framer-motion"
 import { fadeInLeftVariant } from "../utils/variants"
 
@@ -27,6 +27,7 @@ const ShowCase = () => {
             responsiveLeft="1rem"
             responsiveRight="1rem"
             responsiveTop="8rem"
+           
         >
         <FlexContainer  fullWidthCenter>
             <motion.div
@@ -34,7 +35,6 @@ const ShowCase = () => {
             whileInView={{x: 0, opacity:1}}
             transition={{type: 'tween', duration:1}}
              >
-                <Heading as="h4" size="h4">Hello</Heading>
                 <Heading 
                     as="h1" 
                     size="h1" 
@@ -45,7 +45,7 @@ const ShowCase = () => {
                 <Heading as="h1" size="h1" top="0.5rem" bottom="1rem" >
                     <BlueText>Full Stack Developer</BlueText>
                 </Heading>
-                <ParaText as="p" top="2rem" bottom="4rem">
+                <ParaText as="p" top="1rem" bottom="4rem">
                     I'have almost 2 years of expirience developing websites, 
                     web apllications and systems.  
                 </ParaText>
@@ -72,9 +72,9 @@ const ShowCase = () => {
             transition={{type: 'tween', duration:1}}
             >
                 <ShowCaseParticleContainer>
-                    <ShowCaseImageCard>
-                        <img src={logo2} alt="logo from nathan"/>
-                    </ShowCaseImageCard>
+                    {/* <ShowCaseImageCard>
+                        <img src={profilePhoto} alt="logo from nathan"/>
+                    </ShowCaseImageCard> */}
                 </ShowCaseParticleContainer>
             </FlexContainer>
         </FlexContainer>

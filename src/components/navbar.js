@@ -8,6 +8,8 @@ import { GiHamburgerMenu} from "react-icons/gi";
 import { NavMenu } from "./layouts/navMenu";
 import {theme} from '../utils/theme'
 import { Logo, Navbarcontainer, MenuIcon } from "../styles/navbar.styled";
+import { IoRocketSharp } from "react-icons/io5";
+
 
 export const Navbar = () =>{ 
     const [openMenu, setOpenMenu] = useState(false)
@@ -19,7 +21,7 @@ export const Navbar = () =>{
                 <Container>
                     <FlexContainer justify="space-between" responsiveFlex>  
                         <Logo>                    
-                            NATHAN
+                        {/* <IoRocketSharp margin-left='-105px'/> */}
                         </Logo>
                         <MenuIcon onClick={()=>{setOpenMenu(true)}}>
                             <GiHamburgerMenu/>

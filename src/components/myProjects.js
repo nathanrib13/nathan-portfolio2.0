@@ -3,6 +3,8 @@ import {
     PaddingContainer,
     Heading,
     BlueText,
+    Button, 
+    FlexContainer
 
 } from "../styles/global.styled"
 import { projectsDetails } from "../utils/data";
@@ -30,6 +32,11 @@ export const MyProjects = () => {
                      <Project data={projects}/> 
                 </PaddingContainer>
             ))}
+            <FlexContainer justify="center" responsiveFlex>
+                <Button>
+                  Show More
+                </Button>
+            </FlexContainer>
 
         </PaddingContainer>
 

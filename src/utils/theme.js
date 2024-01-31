@@ -5,7 +5,8 @@ export const theme = {
         secondary: "#C0C0C0",
         white: "#EFF3F6",
         black: "#070B0E",
-        para_text_color: "#2E3A44"
+        gray: "#2E3A44",
+        para_text_color: " #C0C0C0"
     },
     fonts:{
         titles: 'arial',

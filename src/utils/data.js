@@ -1,16 +1,39 @@
 import { FaReact, FaNode, FaCss3 } from "react-icons/fa";
-import {SiJavascript} from "react-icons/si"
+import {SiJavascript,  SiTypescript,
+    SiPostgresql,
+    SiGit,
+    SiPython,
+    SiDjango,
+    SiNestjs,
+    SiNextdotjs,
+    SiKotlin,
+  } from "react-icons/si"
 
 export const skills = [
+    {
+        id: 3,
+        tech: 'JavaScript',
+        icon: <SiJavascript/>
+    },
+    {
+        id: 1,
+        tech: 'Node JS',
+        icon: <FaNode/>
+    },
     {
         id: 0,
         tech: 'React JS',
         icon: <FaReact/>
     },
     {
-        id: 1,
-        tech: 'Node JS',
-        icon: <FaNode/>
+        id: 3,
+        tech: 'Typescript',
+        icon: <SiTypescript/>
+    },
+    {
+        id: 3,
+        tech: 'Git',
+        icon: <SiGit/>
     },
     {
         id: 2,
@@ -19,15 +42,37 @@ export const skills = [
     },  
     {
         id: 3,
-        tech: 'JavaScript',
-        icon: <SiJavascript/>
+        tech: 'PostgreSQL',
+        icon: <SiPostgresql/>
+    },  
+    {
+        id: 3,
+        tech: 'Nest JS',
+        icon: <SiNestjs/>
+    },
+
+    {
+        id: 3,
+        tech: 'Python',
+        icon: <SiPython/>
+    },
+
+   
+    {
+        id: 3,
+        tech: 'Kotlin',
+        icon: <SiKotlin/>
+    },
+    {
+        id: 0,
+        tech: 'Next JS',
+        icon: <SiNextdotjs/>
+    },
+    {
+        id: 3,
+        tech: 'Django',
+        icon: <SiDjango/>
     }
-    // },
-    // {
-    //     id: 0,
-    //     tech: 'React JS',
-    //     icon: <FaReact/>
-    // }
 ]
 
 export const projectsDetails = [

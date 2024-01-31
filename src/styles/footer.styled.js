@@ -10,7 +10,7 @@ width: 40%;
 `
 export const FormInput = styled.input`
     width: 100%;
-    background-color: ${({theme})=> theme.colors.primary_light};
+    background-color: ${({theme})=> theme.colors.gray};
     border: 1px solid ${({theme})=> theme.colors.para_text_color};
     color: ${({theme})=> theme.colors.para_text_color};
     border-radius: 5px;

@@ -31,10 +31,10 @@ export const MySkills = () => {
                     {skills.map((skill)=>(
                         <SkillCardContainer>
                             <SkillCard>
-                                <IconContainer size="5rem" color="blue">
+                                <IconContainer size="2.7rem" color="blue">
                                     {skill.icon }
                                 </IconContainer> 
-                                <Heading as="h4" size="h4">
+                                <Heading as="h5" size="h5">
                                     {skill.tech}
                                 </Heading>
                             </SkillCard>
