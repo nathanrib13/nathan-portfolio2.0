@@ -8,7 +8,6 @@ import {
     ParaText,
     Button
 } from "../../styles/global.styled"
-import logo from '../../assets/logo2.png'
 
 import { FaGithub } from "react-icons/fa";
 import { ProjectImageContainer, TechStackCard, ProjectImg } from "../../styles/myProjects.styled";
@@ -41,7 +40,7 @@ export const Project = ({data}) => {
             </div>
             
           <ProjectImageContainer justify="flex-end">
-            <ProjectImg src={logo} alt={data.project_name}/>
+            <ProjectImg src={data.project_img} alt={data.project_name}/>
           </ProjectImageContainer>
 
 

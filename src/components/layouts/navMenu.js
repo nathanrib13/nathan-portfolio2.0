@@ -5,10 +5,10 @@ import {AiOutlineClose} from 'react-icons/ai'
 
 export const NavMenu = ({setOpenMenu}) => {
     return(
-        <NavMenuContainer>5
+        <NavMenuContainer>
             <PaddingContainer left="5%" right="5%" top="2rem">
                 <FlexContainer justify="flex-end" responsiveFlex>
-                    <MenuIcon onClick={()=>setOpenMenu(false)}>
+                    <MenuIcon onClick={()=>setOpenMenu(false)}>                    
                         <AiOutlineClose/>
                     </MenuIcon>
                 </FlexContainer>

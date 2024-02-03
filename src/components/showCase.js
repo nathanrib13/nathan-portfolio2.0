@@ -51,16 +51,24 @@ const ShowCase = () => {
                 </ParaText>
                 <FlexContainer gap="20px" responsiveFlex>
                     <IconContainer color="white" size="1.5rem">
-                        <BsLinkedin/>
+                        <a rel= "noreferrer" href="https://linkedin.com/in/devnathanrib/" target="_blank">    
+                        <BsLinkedin color="white"/>
+                        </a>
                     </IconContainer>
-                    <IconContainer color="white" size="1.5rem">
-                        <BsInstagram/>
+                    <IconContainer size="1.5rem">
+                    <a rel= "noreferrer" href="https://www.instagram.com/dev.nathanribeiro/" target="_blank">
+                        <BsInstagram color="white" />
+                    </a>
                     </IconContainer>
-                    <IconContainer color="white" size="1.5rem">
-                        <BsGithub/>
+                    <IconContainer  size="1.5rem">
+                    <a  rel= "noreferrer" href="https://github.com/nathanrib13/" target="_blank">
+                        <BsGithub color="white"/>
+                        </a>
                     </IconContainer>
-                    <IconContainer color="white" size="1.5rem">
-                        <BsTwitter/>
+                    <IconContainer size="1.5rem">
+                    <a  rel= "noreferrer" href="https://linkedin.com/in/devnathanrib/" target="_blank">
+                        <BsTwitter color="white" />
+                    </a>
                     </IconContainer>
                 </FlexContainer>
             </motion.div>

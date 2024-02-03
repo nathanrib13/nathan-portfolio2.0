@@ -7,7 +7,7 @@ import {
 import { GiHamburgerMenu} from "react-icons/gi";
 import { NavMenu } from "./layouts/navMenu";
 import {theme} from '../utils/theme'
-import { Logo, Navbarcontainer, MenuIcon } from "../styles/navbar.styled";
+import { Logo, Navbarcontainer, MenuIcon, LanguageImg } from "../styles/navbar.styled";
 import { IoRocketSharp } from "react-icons/io5";
 
 
@@ -23,8 +23,10 @@ export const Navbar = () =>{
                         <Logo>                    
                         {/* <IoRocketSharp margin-left='-105px'/> */}
                         </Logo>
-                        <MenuIcon onClick={()=>{setOpenMenu(true)}}>
-                            <GiHamburgerMenu/>
+                        <MenuIcon>
+                        <LanguageImg src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Brazilian_Flag_-_round.svg/2048px-Brazilian_Flag_-_round.svg.png"/>
+                        <LanguageImg src="https://static.vecteezy.com/system/resources/previews/013/743/592/original/united-states-flag-round-icon-american-flag-png.png"/>
+                            <GiHamburgerMenu onClick={()=>{setOpenMenu(true)}}/>
                         </MenuIcon>
                     </FlexContainer>
                 </Container>

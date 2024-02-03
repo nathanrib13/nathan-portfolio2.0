@@ -16,6 +16,12 @@ export const Logo = styled.p`
     font-weight: ${({theme})=> theme.fonts.weigth.medium};
     color: white;
 `
+
+export const LanguageImg = styled.img`
+width: 25px;
+height: 25px;
+margin-right: 10px;
+`
 export const MenuIcon = styled.a`
         color: ${({theme})=> theme.colors.secondary};
         font-size: 1.6rem;
