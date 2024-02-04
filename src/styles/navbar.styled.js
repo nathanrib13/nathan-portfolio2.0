@@ -7,7 +7,8 @@ export const Navbarcontainer = styled.div`
     left: 0;
     z-index: 99;
     transition: all 0.3s ease-in ;  
-    background-color: ${({bgColor})=> bgColor};
+    background-color: ${({theme})=> theme.colors.black};
+    border-bottom: 1px solid ${({theme})=> theme.colors.white};;
 
 `
 

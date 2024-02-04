@@ -4,9 +4,11 @@ import {
     FlexContainer,
     Heading,
     BlueText,
-    Button
+    Button,
+    ParaText
 } from "../styles/global.styled"
 import { ContactForm, FormLabel, FormInput} from "../styles/footer.styled"
+import { DownloadPDF } from "./downloadPDF"
 
 export const Footer = () => {
     return(
@@ -42,9 +44,15 @@ export const Footer = () => {
                                 </Button>
                             </FlexContainer>
                         </ContactForm>
+                    
                 </FlexContainer>
             </PaddingContainer>
-                
+            <ParaText>
+                            MEU WHATSAPP
+                        </ParaText>
+                        <ParaText>
+                            <DownloadPDF/>
+                        </ParaText>
 
         </PaddingContainer>
     )

@@ -12,9 +12,9 @@ import {
     ShowCaseImageCard, 
     ShowCaseParticleContainer 
 } from "../styles/showCase.styled"
-import profilePhoto from "../assets/profilePhoto.jpg"
+import profilePhoto from "../assets/foguete.png"
 import { motion } from "framer-motion"
-import { fadeInLeftVariant } from "../utils/variants"
+// import { fadeInLeftVariant } from "../utils/variants"
 
 const ShowCase = () => {
     return (
@@ -72,19 +72,21 @@ const ShowCase = () => {
                     </IconContainer>
                 </FlexContainer>
             </motion.div>
-            <FlexContainer 
-            as={motion.div}
-            justify="justify-end"
-            initial={{x: 50, opacity:0}}
-            whileInView={{x: 0, opacity:1}}
-            transition={{type: 'tween', duration:1}}
-            >
+            <motion.div
+                initial={{ x: 15, opacity: 0 }}
+                animate={{ x: 200, y: -300, opacity: 1, rotate: -45 }} // Ajuste os valores conforme necessário
+      transition={{ type: "tween", duration: 5, ease: "easeInOut" }}
+
+                style={{ rotate: 180 }} // Adicionando rotação de 360 graus
+                >
                 <ShowCaseParticleContainer>
-                    {/* <ShowCaseImageCard>
+                
+                    <ShowCaseImageCard>
                         <img src={profilePhoto} alt="logo from nathan"/>
-                    </ShowCaseImageCard> */}
+                    </ShowCaseImageCard>
+                    
                 </ShowCaseParticleContainer>
-            </FlexContainer>
+                </motion.div>
         </FlexContainer>
         </PaddingContainer>
     )

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { 
     PaddingContainer,
     FlexContainer,
-    Container 
+    Container, 
+    BlueText
 } from "../styles/global.styled"
 import { GiHamburgerMenu} from "react-icons/gi";
 import { NavMenu } from "./layouts/navMenu";
@@ -21,7 +22,7 @@ export const Navbar = () =>{
                 <Container>
                     <FlexContainer justify="space-between" responsiveFlex>  
                         <Logo>                    
-                        {/* <IoRocketSharp margin-left='-105px'/> */}
+                        Nathan's <BlueText>Portfolio</BlueText> 
                         </Logo>
                         <MenuIcon>
                         <LanguageImg src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Brazilian_Flag_-_round.svg/2048px-Brazilian_Flag_-_round.svg.png"/>

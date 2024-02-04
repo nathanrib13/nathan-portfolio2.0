@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { 
     PaddingContainer,
     Heading,
@@ -7,10 +7,13 @@ import {
     FlexContainer
 
 } from "../styles/global.styled"
-import { projectsDetails } from "../utils/data";
+import { mainProjectsDetails, moreProjectsDetails } from "../utils/data";
 import { Project } from "./layouts/Project";
 
 export const MyProjects = () => {
+
+    const [moreProjects, setMoreProjects] = useState(false)
+
     return(
         <PaddingContainer
             id="projects"
@@ -27,14 +30,21 @@ export const MyProjects = () => {
                 What <BlueText>I have build</BlueText>
             </Heading>
 
-            {projectsDetails.map((projects)=>(
+            {mainProjectsDetails.map((projects)=>(
                 <PaddingContainer key={projects.id} top="5rem" bottom="5rem"> 
                      <Project data={projects}/> 
                 </PaddingContainer>
             ))}
-            <FlexContainer justify="center" responsiveFlex>
-                <Button>
-                  Show More
+            {moreProjects && 
+            moreProjectsDetails.map((projects)=>(
+                <PaddingContainer key={projects.id} top="5rem" bottom="5rem"> 
+                     <Project data={projects}/> 
+                </PaddingContainer>
+            ))
+            }
+             <FlexContainer justify="center" responsiveFlex>
+                <Button onClick={()=>setMoreProjects(!moreProjects)}>
+                    {moreProjects ? "Hidden" : "Show More"}
                 </Button>
             </FlexContainer>
 

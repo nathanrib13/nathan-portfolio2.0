@@ -82,7 +82,7 @@ export const skills = [
 // "https://i.imgur.com/aIqMerg.png", // motos shops
 // "https://i.imgur.com/b1Cg9Is.png", // contact list
 
-export const projectsDetails = [
+export const mainProjectsDetails = [
  
     {
     id: 1,
@@ -123,25 +123,28 @@ export const projectsDetails = [
         project_url: 'betano.com',
         project_github: 'https://github.com/nathanrib13',
         reverse: false
-    },
-    // {
-    // id: 5,
-    //     project_name: "Link Up ",
-    //     project_description: "Project to resolve a problme from gamers isolations alones anda fracassed resolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassed",
-    //     tech_stack: ['React JS', 'TypeScript', 'FireBase'],
-    //     project_img: 'https://i.imgur.com/aIqMerg.png',
-    //     project_url: 'betano.com',
-    //     project_github: 'https://github.com/nathanrib13',
-    //     reverse: false
-    // },
-    // {
-    // id: 6,
-    //     project_name: "Motors Shop",
-    //     project_description: "Project to resolve a problme from gamers isolations alones anda fracassed resolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassed",
-    //     tech_stack: ['React JS', 'TypeScript', 'FireBase'],
-    //     project_img: 'https://wiplash.com/sidjasidjas',
-    //     project_url: 'betano.com',
-    //     project_github: 'https://github.com/nathanrib13',
-    //     reverse: false
-    // },
+    }
 ]
+
+export const moreProjectsDetails = [{
+   
+    id: 5,
+        project_name: "Link Up ",
+        project_description: "Project to resolve a problme from gamers isolations alones anda fracassed resolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassed",
+        tech_stack: ['React JS', 'TypeScript', 'FireBase'],
+        project_img: 'https://i.imgur.com/aIqMerg.png',
+        project_url: 'betano.com',
+        project_github: 'https://github.com/nathanrib13',
+        reverse: false
+    },
+    {
+    id: 6,
+        project_name: "Motors Shop",
+        project_description: "Project to resolve a problme from gamers isolations alones anda fracassed resolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassedresolve a problme from gamers isolations alones anda fracassed",
+        tech_stack: ['React JS', 'TypeScript', 'FireBase'],
+        project_img: 'https://wiplash.com/sidjasidjas',
+        project_url: 'betano.com',
+        project_github: 'https://github.com/nathanrib13',
+        reverse: false
+
+}]
