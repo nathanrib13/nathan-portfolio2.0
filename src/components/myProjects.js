@@ -9,6 +9,8 @@ import {
 } from "../styles/global.styled"
 import { mainProjectsDetails, moreProjectsDetails } from "../utils/data";
 import { Project } from "./layouts/Project";
+import { motion } from "framer-motion"
+
 
 export const MyProjects = () => {
 
@@ -31,15 +33,27 @@ export const MyProjects = () => {
             </Heading>
 
             {mainProjectsDetails.map((projects)=>(
+                 <motion.div
+                 initial={{x: -50, opacity:0}}
+                 whileInView={{x: 0, opacity:1}}
+                 transition={{type: 'tween', duration:1}}
+                  >
                 <PaddingContainer key={projects.id} top="5rem" bottom="5rem"> 
                      <Project data={projects}/> 
                 </PaddingContainer>
+                </motion.div>
             ))}
             {moreProjects && 
             moreProjectsDetails.map((projects)=>(
+                <motion.div
+                initial={{x: 50, opacity:0}}
+                whileInView={{x: 0, opacity:1}}
+                transition={{type: 'tween', duration:1}}
+                 >
                 <PaddingContainer key={projects.id} top="5rem" bottom="5rem"> 
                      <Project data={projects}/> 
                 </PaddingContainer>
+                </motion.div>
             ))
             }
              <FlexContainer justify="center" responsiveFlex>

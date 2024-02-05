@@ -7,6 +7,8 @@ import { MySkills } from "./components/mySkills";
 import { MyProjects } from "./components/myProjects";
 import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
+import { Services } from "./components/services";
+import { Expirience } from "./components/expirience";
 
 
 
@@ -18,7 +20,9 @@ function App() {
       <Container>
         <ShowCase/>
         <MySkills/>
+        <Expirience/>
         <MyProjects/>
+        <Services/>
         <Footer/>
       </Container>
      </MainBody>

@@ -33,19 +33,27 @@ export const MenuIcon = styled.a`
 `
 export const NavMenuContainer = styled.div`
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 9%;
+    right: 0;
     height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+      backdrop-filter: blur(8px); /* Valor do desfoque */
     width: 100%;
-    background-color: ${({theme}) => theme.colors.primary_light};
     z-index: 99;
 
 `
 export const MenuItem = styled.a`
-color: #fff;
-font-size: 2.5rem;
-margin-top: 3rem;
-cursor: pointer;
-text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid transparent; /* Adiciona uma borda transparente antecipadamente */
 
-`
+  &:hover {
+    border-bottom: 1px solid white; /* Altera a cor da borda no hover */
+    transform: translateY(-3px); /* Move o elemento para cima ao passar o mouse */
+  }
+
+  transition: border-bottom 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
+`;

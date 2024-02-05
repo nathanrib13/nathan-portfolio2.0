@@ -1,28 +1,52 @@
 import styled from "styled-components";
 
-export const ContactForm = styled.form`
-width: 40%;
+export const ContactCard = styled.div`
+margin-top: 5rem;
+display: flex;
+flex-direction: column;
+height: auto;
+align-items: center;
+padding: 1rem 1rem;
+gap: 35px;
+
+
+> h2 {
+    margin-top: -25px;
+    margin-bottom: 10px;
+    color: ${({theme})=>theme.colors.para_text_color};
+}
+>svg{ 
+    width: 68px;
+    height: 68px;
+    color: ${({theme})=>theme.colors.primary};
+    text-align: justify;
+    margin-bottom: 15px ;
+}
+
 @media(max-width: ${({theme})=> theme.breakpoints.mobile}){
     width: 90%;
     margin: auto
 }
 
-`
-export const FormInput = styled.input`
-    width: 100%;
-    background-color: ${({theme})=> theme.colors.gray};
-    border: 1px solid ${({theme})=> theme.colors.para_text_color};
-    color: ${({theme})=> theme.colors.para_text_color};
-    border-radius: 5px;
-    padding: 15px;
-
-    &::placeholder{
-        color: ${({theme})=> theme.colors.para_text_color};
-
-    }
 
 `
-export const FormLabel = styled.p`
-    color: ${({theme})=> theme.colors.para_text_color};
-    padding-bottom: 10px
+export const FooterRights = styled.footer`
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 24px 45px;
+margin-bottom: -55px;
+background-color: #151515;
+
+
+
+> div{
+    display: flex;
+    gap: 8px;
+}
+>p{
+    color: ${({theme})=>theme.colors.para_text_color    };;
+}
+
 `
+

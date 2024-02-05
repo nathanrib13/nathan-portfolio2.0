@@ -46,7 +46,7 @@ export const MySkills = () => {
                         MY SKILLS 
                     </Heading>
                     <Heading as="h2" size="h2" top="0.5rem">
-                        What <BlueText>I can do</BlueText>
+                        About <BlueText>Me</BlueText>
                     </Heading>  
                     <ParaText top="2rem" bottom="1.5rem">
                          lorem lorem lorem lorem lorem lore lorem lorem lorem lorem lorem loremm

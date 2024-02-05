@@ -5,10 +5,16 @@ import {
     Heading,
     BlueText,
     Button,
-    ParaText
+    IconContainer 
+
 } from "../styles/global.styled"
-import { ContactForm, FormLabel, FormInput} from "../styles/footer.styled"
-import { DownloadPDF } from "./downloadPDF"
+import { FaLocationDot } from "react-icons/fa6";
+import { ContactCard, FooterRights} from "../styles/footer.styled"
+import { MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
+import {BsLinkedin, BsGithub, BsInstagram, BsTwitter} from "react-icons/bs"
+
+
 
 export const Footer = () => {
     return(
@@ -18,42 +24,60 @@ export const Footer = () => {
         bottom="10%"
         >
             <Heading as="h4" size="h4" align="center">
-                    MY CONTACT
+                    Contact 
             </Heading>
             <Heading as="h2" size="h2" align="center" top="0.5rem">
-                    Contact <BlueText>Me Here</BlueText>
+                    Where <BlueText>I am</BlueText>
             </Heading>
-            <PaddingContainer top="3rem">
-                <FlexContainer justify="center">
-                        <ContactForm>
-                            <PaddingContainer bottom="2rem">
-                                <FormLabel>Name:</FormLabel>
-                                <FormInput type="text" placeholder="Enter your name"/>
-                            </PaddingContainer>
-                            <PaddingContainer bottom="2rem">
-                                <FormLabel>Email:</FormLabel>
-                                <FormInput type="mail" placeholder="Enter your name"/>
-                            </PaddingContainer>
-                            <PaddingContainer bottom="2rem">
-                                <FormLabel>Message:</FormLabel>
-                                <FormInput as="textarea" placeholder="Enter your name"/>
-                            </PaddingContainer >
-                            <FlexContainer justify="center" responsiveFlex>
-                                <Button>
-                                    Send Message
-                                </Button>
-                            </FlexContainer>
-                        </ContactForm>
-                    
-                </FlexContainer>
-            </PaddingContainer>
-            <ParaText>
-                            MEU WHATSAPP
-                        </ParaText>
-                        <ParaText>
-                            <DownloadPDF/>
-                        </ParaText>
+            <FlexContainer justify="space-between" >
+        <ContactCard>
+        <FaLocationDot />
+            <h2 >Location</h2>
+            
+        </ContactCard>
+        <ContactCard>
+        <MdEmail />
+            <h2 >Email</h2>
+            
+        </ContactCard>
+        <ContactCard>
+            <IoLogoWhatsapp />
+            <h2 >WhatsApp</h2>
+            
+        </ContactCard>
+        </FlexContainer>
+     
+            <FooterRights>
+                
+            <p>
+            © Todos os Diretos Reservados - Nathan Ribeiro.
+            </p>
+        <div>
+            <IconContainer color="white" size="1.5rem">
+                        <a rel= "noreferrer" href="https://linkedin.com/in/devnathanrib/" target="_blank">    
+                        <BsLinkedin color="white"/>
+                        </a>
+            </IconContainer>
 
+            <IconContainer size="1.5rem">
+                    <a rel= "noreferrer" href="https://www.instagram.com/dev.nathanribeiro/" target="_blank">
+                        <BsInstagram color="white" />
+                    </a>
+            </IconContainer>
+                    
+            <IconContainer  size="1.5rem">
+                    <a  rel= "noreferrer" href="https://github.com/nathanrib13/" target="_blank">
+                        <BsGithub color="white"/>
+                        </a>
+            </IconContainer>
+
+            <IconContainer size="1.5rem">
+                    <a  rel= "noreferrer" href="https://linkedin.com/in/devnathanrib/" target="_blank">
+                        <BsTwitter color="white" />
+                    </a>
+            </IconContainer>
+                    </div>
+            </FooterRights>
         </PaddingContainer>
     )
 }

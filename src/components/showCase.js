@@ -14,6 +14,8 @@ import {
 } from "../styles/showCase.styled"
 import profilePhoto from "../assets/foguete.png"
 import { motion } from "framer-motion"
+import { FastInfo } from "./fastInfo"
+
 // import { fadeInLeftVariant } from "../utils/variants"
 
 const ShowCase = () => {
@@ -87,6 +89,10 @@ const ShowCase = () => {
                     
                 </ShowCaseParticleContainer>
                 </motion.div>
+                <FastInfo>
+                            
+                </FastInfo>
+
         </FlexContainer>
         </PaddingContainer>
     )
