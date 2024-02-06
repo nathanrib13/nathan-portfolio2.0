@@ -14,6 +14,8 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "workbench.statusBar.visible": false,
+      "editor.accessibilitySupport": "off",
+
     
     "apc.header": {
         "height": 36
@@ -29,7 +31,49 @@
         ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
       },
 
-      "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
+      "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 
+      "files.autoSave": "afterDelay", // <== Salvar automaticamente
+      "extensions.ignoreRecommendations": true, // <== Não mostrar recomendações de extensões
 
+      "eslint.format.enable": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": false,
+      "editor.inlineSuggest.enabled": true,
+      "git.confirmSync": false,
+      "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": true,
+        "javascript": true,
+        "python": true,
+        "javascriptreact": true
+      },
+      "editor.semanticHighlighting.enabled": false,
+      "eslint.validate": ["javascript", "typescriptreact", "javascriptreact"],
+      "[javascript]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescript]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[javascriptreact]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescriptreact]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+      },
 }
