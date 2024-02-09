@@ -20,11 +20,18 @@ export const Navbar = () => {
     i18n: { changeLanguage, language },
   } = useTranslation();
 
-  const [currentlanguage, setCurrentLanguage] = useState(language);
-  const handleChangeLanguage = () => {
-    const newLanguage = currentlanguage === "en" ? "pt" : "en";
+  const [currentLanguage, setCurrentLanguage] = useState(language);
+
+  const handleChangeLanguage = (newLanguage) => {
     changeLanguage(newLanguage);
     setCurrentLanguage(newLanguage);
+  };
+  const handleFlagClick = (flagLanguage) => {
+    if (flagLanguage === "en" && currentLanguage !== "en") {
+      handleChangeLanguage("en");
+    } else if (flagLanguage === "pt" && currentLanguage !== "pt") {
+      handleChangeLanguage("pt");
+    }
   };
 
   const [openMenu, setOpenMenu] = useState(false);
@@ -42,10 +49,13 @@ export const Navbar = () => {
             <Logo>{t("header")}</Logo>
             <MenuIcon>
               <LanguageImg
-                onClick={handleChangeLanguage}
+                onClick={() => handleFlagClick("pt")}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Brazilian_Flag_-_round.svg/2048px-Brazilian_Flag_-_round.svg.png"
               />
-              <LanguageImg src="https://static.vecteezy.com/system/resources/previews/013/743/592/original/united-states-flag-round-icon-american-flag-png.png" />
+              <LanguageImg
+                onClick={() => handleFlagClick("en")}
+                src="https://static.vecteezy.com/system/resources/previews/013/743/592/original/united-states-flag-round-icon-american-flag-png.png"
+              />
               <GiHamburgerMenu
                 onClick={() => {
                   setOpenMenu(true);
