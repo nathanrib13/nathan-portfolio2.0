@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import profilePhoto from "../assets/foguete.png";
 import {
