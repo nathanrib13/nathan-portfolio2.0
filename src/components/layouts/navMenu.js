@@ -18,7 +18,7 @@ export const NavMenu = ({ setOpenMenu }) => {
         </FlexContainer>
       </PaddingContainer>
 
-      <PaddingContainer top="8%">
+      <PaddingContainer top="3%">
         <FlexContainer direction="column" align="center" responsiveFlex>
           <MenuItem href="#home" onClick={() => setOpenMenu(false)}>
             Home

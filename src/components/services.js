@@ -12,6 +12,7 @@ import { ServiceContainer } from "../styles/service.styled";
 
 export const Services = () => {
   return (
+    //put some animation here
     <PaddingContainer id="services" top="5%" bottom="10%" align="center">
       <Heading as="h4" size="h4">
         MY SERVICES
