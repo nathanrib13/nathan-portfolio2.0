@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import profilePhoto from "../assets/foguete.png";
 import {
@@ -20,12 +20,13 @@ import { FastInfo } from "./fastInfo";
 // import { fadeInLeftVariant } from "../utils/variants"
 
 const ShowCase = () => {
+  const { t } = useTranslation();
   return (
     <PaddingContainer
       id="home"
       left="3%"
       top="15%"
-      rigth="10%"
+      rigth="5%"
       bottom="10%"
       responsiveLeft="1rem"
       responsiveRight="1rem"
@@ -38,14 +39,13 @@ const ShowCase = () => {
           transition={{ type: "tween", duration: 1 }}
         >
           <Heading as="h1" size="h1" top="3.5rem" bottom="1rem">
-            I'm <BlueText>Nathan Ribeiro</BlueText>
+            {t("hello")} <BlueText>Nathan Ribeiro</BlueText>
           </Heading>
-          <Heading as="h1" size="h1" top="0.5rem" bottom="1rem">
-            <BlueText>Full Stack Developer</BlueText>
+          <Heading as="h2" size="h2" top="0.5rem" bottom="1rem">
+            {t("professional")}
           </Heading>
           <ParaText as="p" top="1rem" bottom="4rem">
-            I'have almost 2 years of expirience developing websites, web
-            apllications and systems.
+            {t("shortExp")}
           </ParaText>
           <FlexContainer gap="20px" responsiveFlex>
             <IconContainer color="white" size="1.5rem">

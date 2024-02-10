@@ -42,7 +42,7 @@ export const Heading = styled(PaddingContainer)`
   font-size: ${({ size }) => {
     switch (size) {
       case "h1":
-        return "4.5rem";
+        return "3.5rem";
       case "h2":
         return "3rem";
       case "h3":

@@ -1,5 +1,7 @@
 {
   "translation": {
-    "header": "Porflio do nat"
+    "hello": "Eu sou",
+    "professional": "Desenvolvedor Full Stack",
+    "shortExp": " Possuo quase 2 anos de experiencia desenvolvendo sites, aplicações web e sistemas"
   }
 }

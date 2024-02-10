@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
+  BlueText,
   Container,
   FlexContainer,
   PaddingContainer,
@@ -46,7 +47,9 @@ export const Navbar = () => {
       >
         <Container>
           <FlexContainer justify="space-between" responsiveFlex>
-            <Logo>{t("header")}</Logo>
+            <Logo>
+              Nathan Ribeiro <BlueText>Dev</BlueText>
+            </Logo>
             <MenuIcon>
               <LanguageImg
                 onClick={() => handleFlagClick("pt")}
