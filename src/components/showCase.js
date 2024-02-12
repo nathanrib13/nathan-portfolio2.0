@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-import profilePhoto from "../assets/foguete.png";
 import {
   BlueText,
   FlexContainer,
@@ -11,10 +10,6 @@ import {
   PaddingContainer,
   ParaText,
 } from "../styles/global.styled";
-import {
-  ShowCaseImageCard,
-  ShowCaseParticleContainer,
-} from "../styles/showCase.styled";
 import { FastInfo } from "./fastInfo";
 
 // import { fadeInLeftVariant } from "../utils/variants"
@@ -87,18 +82,12 @@ const ShowCase = () => {
           </FlexContainer>
         </motion.div>
         <motion.div
-          initial={{ x: 15, opacity: 0 }}
-          animate={{ x: 200, y: -300, opacity: 1, rotate: -45 }} // Ajuste os valores conforme necessário
-          transition={{ type: "tween", duration: 5, ease: "easeInOut" }}
-          style={{ rotate: 180 }} // Adicionando rotação de 360 graus
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ type: "tween", duration: 1 }}
         >
-          <ShowCaseParticleContainer>
-            <ShowCaseImageCard>
-              <img src={profilePhoto} alt="logo from nathan" />
-            </ShowCaseImageCard>
-          </ShowCaseParticleContainer>
+          <FastInfo/>
         </motion.div>
-        <FastInfo></FastInfo>
       </FlexContainer>
     </PaddingContainer>
   );
