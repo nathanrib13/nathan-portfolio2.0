@@ -32,7 +32,7 @@ export const Services = () => {
         <ServiceContainer>
           <img src={code} alt="robo imagem" />
           <h2>Developing</h2>
-          <p>develping websites and portfolios for you motherfuck</p>
+          <p>Developing websites and portfolios for you motherfuck</p>
         </ServiceContainer>
         <ServiceContainer>
           <img src={mobile} alt="robo imagem" />

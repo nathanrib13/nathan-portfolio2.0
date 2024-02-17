@@ -1,49 +1,56 @@
 import React from "react";
 
-import { 
-    PaddingContainer,
-    FlexContainer,
-    Heading,
-    IconContainer, 
-    ParaText,
-    Button
-} from "../../styles/global.styled"
+import {
+  FlexContainer,
+  Heading,
+  IconContainer,
+  PaddingContainer,
+  ParaText,
+} from "../../styles/global.styled";
 
 import { FaGithub } from "react-icons/fa";
-import { ProjectImageContainer, TechStackCard, ProjectImg } from "../../styles/myProjects.styled";
+import { TbWorld } from "react-icons/tb";
 
-export const Project = ({data}) => {
-    return(
-        <FlexContainer fullWidthChild>
-            <div>
-                <FlexContainer align="center" gap="1rem">
-                    <Heading as="h3" size="h3" bottom="1rem">
-                        {data.project_name}
-                    </Heading>
-                    <IconContainer color="blue" size="2rem">
-                        <FaGithub/>
-                    </IconContainer>
-                </FlexContainer>
+import {
+  ProjectImageContainer,
+  ProjectImg,
+  TechStackCard,
+} from "../../styles/myProjects.styled";
 
-                <PaddingContainer top="1rem">
-                    <FlexContainer gap="1.5rem">
-                    {data.tech_stack.map((tech_stack)=> (
-                        <TechStackCard>{tech_stack}</TechStackCard>
-                    ))}
-                    </FlexContainer>
-                </PaddingContainer>
-
-                <ParaText top="1.5rem" bottom="2rem">
-                        {data.project_description} 
-                </ParaText>
-                <Button> Visit website</Button>
-            </div>
-            
-          <ProjectImageContainer justify="flex-end">
-            <ProjectImg src={data.project_img} alt={data.project_name}/>
-          </ProjectImageContainer>
-
-
+export const Project = ({ data }) => {
+  return (
+    <FlexContainer fullWidthChild>
+      <div>
+        <FlexContainer align="center" gap="1rem">
+          <Heading as="h3" size="h3" bottom="1rem">
+            {data.project_name}
+          </Heading>
         </FlexContainer>
-    )
-}
+
+        <PaddingContainer top="1rem">
+          <FlexContainer gap="1.5rem">
+            {data.tech_stack.map((tech_stack) => (
+              <TechStackCard>{tech_stack}</TechStackCard>
+            ))}
+          </FlexContainer>
+        </PaddingContainer>
+
+        <ParaText top="1.5rem" bottom="2rem">
+          {data.project_description}
+        </ParaText>
+        <FlexContainer align="center" gap="5px">
+          <IconContainer color="blue" size="2rem">
+            <TbWorld />
+          </IconContainer>
+          <IconContainer color="blue" size="2rem">
+            <FaGithub />
+          </IconContainer>
+        </FlexContainer>
+      </div>
+
+      <ProjectImageContainer justify="flex-end">
+        <ProjectImg src={data.project_img} alt={data.project_name} />
+      </ProjectImageContainer>
+    </FlexContainer>
+  );
+};
